@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Glassmorphism Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-body">
+  <nav class="navbar">
+    <div class="logo">MyBrand</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Explore</a></li>
+      <li><a href="#">Settings</a></li>
+      <li><a href="#" id="logoutBtn" class="logout-btn">Logout</a></li>
+    </ul>
+  </nav>
+
+  <div class="home-container">
+    <header class="welcome-text">
+      <h1>Welcome Back!</h1>
+      <p>Manage your account and view your latest updates here.</p>
+    </header>
+
+    <div class="grid-layout">
+      <div class="wrapper card">
+        <h3>Statistics</h3>
+        <p>Your activity is up by 15% this week.</p>
+        <button>View Details</button>
+      </div>
+
+      <div class="wrapper card">
+        <h3>Recent Tasks</h3>
+        <p>You have 3 pending items to review.</p>
+        <button>Open Tasks</button>
+      </div>
+
+      <div class="wrapper card">
+        <h3>Messages</h3>
+        <p>You have 2 new unread messages.</p>
+        <button>Go to Inbox</button>
+      </div>
+    </div>
+  </div>
+ <script>
+  const logoutBtn = document.getElementById('logoutBtn');
+  logoutBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.location.href = "index.html"; 
+  });
+</script>
+</body>
+</html>
